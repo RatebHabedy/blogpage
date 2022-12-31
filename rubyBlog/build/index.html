@@ -1,256 +1,186 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    <link rel="stylesheet" href="assets/css/gg-icons.css" />
 
-    <link rel="stylesheet" href="assets/css/ruby.css" />
-    <title>Ruby - Blog</title>
-  </head>
-  <body class="bg-hero-pattern bg-cover bg-no-repeat">
-    <nav class="fixed w-full block top-0 py-3 ease-in duration-100 z-40">
-      <div
-        class="container relative mx-auto flex items-center justify-between px-3"
-      >
-        <a href="#">
-          <img src="assets/img/brand.svg" alt="" class="w-10 py-5" />
-        </a>
-        <button
-          data-collapse-toggle="navbar-multi-level"
-          type="button"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/gg-icons.css" />
+
+  <link rel="stylesheet" href="assets/css/ruby.css" />
+  <title>Ruby - Blog</title>
+</head>
+
+<body class="bg-hero-pattern bg-cover bg-no-repeat">
+  <nav class="fixed w-full block top-0 py-3 ease-in duration-100 z-40">
+    <div class="container relative mx-auto flex items-center justify-between px-3">
+      <a href="#">
+        <img src="assets/img/brand.svg" alt="" class="w-10 py-5" />
+      </a>
+      <button data-collapse-toggle="navbar-multi-level" type="button"
           class="navbar-toggler inline-flex items-center p-2 ml-3 text-sm ease-in duration-100 text-gray-900 rounded-lg focus:bg-pink-100 focus:shadow-lg border border-transparent focus:border-pink-300 focus:text-pink-500 focus:outline-none active:bg-pink-200 md:hidden"
-          aria-controls="navbar-multi-level"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <ol
-          class="navbar-list bg-slate-100 font-semibold absolute top-full left-0 w-full mt-3 py-3 ease-in duration-300 opacity-0 invisible md:relative md:visible md:opacity-100 md:w-auto md:flex md:bg-transparent md:p-0 md:m-0"
-        >
-          <li class="px-4 py-3"><a href="#">Pricings</a></li>
-          <li class="px-4 py-3"><a href="#">Pricings</a></li>
-          <li class="px-4 py-3"><a href="#">Pricings</a></li>
-        </ol>
+          aria-controls="navbar-multi-level" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <ol
+          class="navbar-list bg-slate-100 font-semibold absolute top-full left-0 w-full mt-3 py-3 ease-in duration-300 opacity-0 invisible md:relative md:visible md:opacity-100 md:w-auto md:flex md:bg-transparent md:p-0 md:m-0">
+        <li class="px-4 py-3"><a href="#">Pricings</a></li>
+        <li class="px-4 py-3"><a href="#">Pricings</a></li>
+        <li class="px-4 py-3"><a href="#">Pricings</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- carousel row  -->
+  <div class="mt-30 md:mt-34 flex">
+    <!-- carousel items  -->
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
+        </div>
       </div>
-    </nav>
+    </a>
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
+        </div>
+      </div>
+    </a>
 
-    <!-- carousel row  -->
-    <div class="mt-30 md:mt-34 flex">
-      <!-- carousel items  -->
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
         </div>
-      </a>
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
+      </div>
+    </a>
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
         </div>
-      </a>
+      </div>
+    </a>
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
+        </div>
+      </div>
+    </a>
 
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
+    <a href="#" class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
+      <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
+      <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
+      <div class="absolute bottom-0 text-white m-7 mb-8">
+        <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
+        <div class="text-sm flex opacity-90">
+          <h6 class="text-xs flex items-center mr-5">
+            <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
+          </h6>
+          <h6 class="text-xs flex items-center">
+            <span class="gg-comment inline-block mr-2"></span> 235
+          </h6>
         </div>
-      </a>
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="d-block h-128 min-w-96 min-w-96 w-96 shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2"
-      >
-        <img
-          src="assets/img/blog-01.jpg"
-          class="bg-cover min-h-full min-w-full"
-          alt=""
-        />
-        <div
-          class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"
-        ></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-    </div>
-    <!-- // carousel row  -->
+      </div>
+    </a>
+  </div>
+  <!-- // carousel row  -->
 
-    <div class="m5-40">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptate
-      error corrupti assumenda, qui et. Alias commodi distinctio consectetur in
-      deleniti labore cumque, qui aperiam voluptatibus quisquam inventore
-      perferendis rerum aliquam sit itaque quaerat reiciendis similique hic,
-      illo velit consequuntur ipsa nihil! Placeat non obcaecati at quo! Numquam
-      assumenda deserunt veniam. Commodi facere cupiditate assumenda
-      exercitationem iure esse voluptates, provident delectus autem. Itaque
-      aperiam, provident nemo reprehenderit numquam possimus sint nostrum
-      voluptates beatae unde nihil cupiditate tempora ab doloremque expedita hic
-      labore illum tempore odit consectetur. Alias, ullam a id, temporibus
-      officia aliquam obcaecati similique, quisquam nam nesciunt perspiciatis.
-      Vel saepe molestiae cumque atque! Cupiditate dolorem accusamus accusantium
-      necessitatibus consectetur vel deserunt libero nostrum ducimus eligendi
-      facilis, cumque neque perferendis assumenda vitae optio pariatur a
-      quisquam eum! Repudiandae optio dignissimos magni facilis dolore iusto
-      vero possimus corporis placeat qui, dolorem corrupti ipsa blanditiis,
-      reprehenderit cupiditate odit. Quae aliquid explicabo hic maiores eligendi
-      dicta voluptates quia cum perspiciatis aliquam, repellendus officiis
-      voluptatum adipisci itaque quidem reiciendis amet suscipit tempore saepe
-      nesciunt porro repellat tenetur delectus eos. Quas hic, repudiandae fugiat
-      aut corrupti nulla incidunt vero doloribus nisi, aperiam quam architecto
-      officia rem repellendus ipsam, enim sint a beatae minus sit voluptate
-      saepe nostrum voluptatem reprehenderit. Recusandae est adipisci fugiat
-      alias maxime tempora rerum quasi delectus facere. Corrupti molestiae sed,
-      eligendi animi asperiores sunt fugit quae molestias laborum quaerat eaque
-      odio esse cumque nisi debitis quos repudiandae accusamus alias dolores,
-      earum et! Aperiam, ducimus! Consequatur aut placeat enim voluptate
-      similique earum repellat esse ratione, nesciunt, asperiores sapiente
-      fugiat dicta illum laboriosam tempore facere perspiciatis facilis
-      molestias corporis eius excepturi. Minus blanditiis corrupti provident
-      quidem placeat ab voluptatibus commodi, corporis atque facilis error
-      tenetur cupiditate necessitatibus distinctio qui praesentium! Obcaecati
-      nihil, commodi perferendis voluptas consequatur voluptates aliquid quam
-      facere molestias quae? Sint quia neque, commodi molestiae voluptate magni
-      quam ea ipsam, fugiat laboriosam nemo sed optio repellat ex, perspiciatis
-      impedit. Ex incidunt fugiat ratione omnis magni cupiditate minus odio
-      dolores explicabo quos nobis assumenda dolorum eveniet, ullam sint
-      dolorem. Aut expedita magnam perferendis repellat asperiores quam suscipit
-      nam modi similique ipsam at explicabo possimus odio totam, vitae
-      temporibus dolorem fuga et rem dolor veniam cumque recusandae minus.
-      Molestias, perspiciatis. Totam deserunt voluptas laborum illo veniam
-      dignissimos! Modi aperiam, atque unde accusantium debitis asperiores sint,
-      deleniti, voluptates alias labore ipsum deserunt. Id, quasi officiis error
-      soluta aspernatur, non alias libero aut tempore mollitia porro!
-    </div>
-  </body>
-  <script src="assets/js/ruby.js"></script>
+  <div class="m5-40">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptate
+    error corrupti assumenda, qui et. Alias commodi distinctio consectetur in
+    deleniti labore cumque, qui aperiam voluptatibus quisquam inventore
+    perferendis rerum aliquam sit itaque quaerat reiciendis similique hic,
+    illo velit consequuntur ipsa nihil! Placeat non obcaecati at quo! Numquam
+    assumenda deserunt veniam. Commodi facere cupiditate assumenda
+    exercitationem iure esse voluptates, provident delectus autem. Itaque
+    aperiam, provident nemo reprehenderit numquam possimus sint nostrum
+    voluptates beatae unde nihil cupiditate tempora ab doloremque expedita hic
+    labore illum tempore odit consectetur. Alias, ullam a id, temporibus
+    officia aliquam obcaecati similique, quisquam nam nesciunt perspiciatis.
+    Vel saepe molestiae cumque atque! Cupiditate dolorem accusamus accusantium
+    necessitatibus consectetur vel deserunt libero nostrum ducimus eligendi
+    facilis, cumque neque perferendis assumenda vitae optio pariatur a
+    quisquam eum! Repudiandae optio dignissimos magni facilis dolore iusto
+    vero possimus corporis placeat qui, dolorem corrupti ipsa blanditiis,
+    reprehenderit cupiditate odit. Quae aliquid explicabo hic maiores eligendi
+    dicta voluptates quia cum perspiciatis aliquam, repellendus officiis
+    voluptatum adipisci itaque quidem reiciendis amet suscipit tempore saepe
+    nesciunt porro repellat tenetur delectus eos. Quas hic, repudiandae fugiat
+    aut corrupti nulla incidunt vero doloribus nisi, aperiam quam architecto
+    officia rem repellendus ipsam, enim sint a beatae minus sit voluptate
+    saepe nostrum voluptatem reprehenderit. Recusandae est adipisci fugiat
+    alias maxime tempora rerum quasi delectus facere. Corrupti molestiae sed,
+    eligendi animi asperiores sunt fugit quae molestias laborum quaerat eaque
+    odio esse cumque nisi debitis quos repudiandae accusamus alias dolores,
+    earum et! Aperiam, ducimus! Consequatur aut placeat enim voluptate
+    similique earum repellat esse ratione, nesciunt, asperiores sapiente
+    fugiat dicta illum laboriosam tempore facere perspiciatis facilis
+    molestias corporis eius excepturi. Minus blanditiis corrupti provident
+    quidem placeat ab voluptatibus commodi, corporis atque facilis error
+    tenetur cupiditate necessitatibus distinctio qui praesentium! Obcaecati
+    nihil, commodi perferendis voluptas consequatur voluptates aliquid quam
+    facere molestias quae? Sint quia neque, commodi molestiae voluptate magni
+    quam ea ipsam, fugiat laboriosam nemo sed optio repellat ex, perspiciatis
+    impedit. Ex incidunt fugiat ratione omnis magni cupiditate minus odio
+    dolores explicabo quos nobis assumenda dolorum eveniet, ullam sint
+    dolorem. Aut expedita magnam perferendis repellat asperiores quam suscipit
+    nam modi similique ipsam at explicabo possimus odio totam, vitae
+    temporibus dolorem fuga et rem dolor veniam cumque recusandae minus.
+    Molestias, perspiciatis. Totam deserunt voluptas laborum illo veniam
+    dignissimos! Modi aperiam, atque unde accusantium debitis asperiores sint,
+    deleniti, voluptates alias labore ipsum deserunt. Id, quasi officiis error
+    soluta aspernatur, non alias libero aut tempore mollitia porro!
+  </div>
+</body>
+<script src="assets/js/ruby.js"></script>
+
 </html>
