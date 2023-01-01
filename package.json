@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/ruby-tailwind.css -o ./build/assets/css/ruby.css --watch"
+  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
