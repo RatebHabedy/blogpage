@@ -632,6 +632,15 @@ h6{
   line-height: 1.625;
 }
 
+.card{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.3rem;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -823,10 +832,6 @@ h6{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-center{
@@ -1064,23 +1069,6 @@ h6{
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-
-/* 
-@layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  h3 {
-    @apply text-lg;
-  }
-
-  p {
-    @apply text-state-900;
-  }
-} */
 
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
