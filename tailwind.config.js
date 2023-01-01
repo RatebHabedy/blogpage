@@ -18,7 +18,6 @@ module.exports = {
       80: "15rem",
       70: "12rem",
     },
-
     minHeight: {
       96: "24rem",
       88: "20rem",
@@ -34,12 +33,10 @@ module.exports = {
       70: "12rem",
       128: "36rem",
     },
-
     container: {
       center: true,
       padding: "2rem",
     },
-
     // typography
     fontSize: {
       xs: [
