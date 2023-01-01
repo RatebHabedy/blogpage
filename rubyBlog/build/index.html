@@ -1,279 +1,697 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/gg-icons.css" />
+    <link rel="stylesheet" href="assets/css/ruby.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/gg-icons.css" />
-  <link rel="stylesheet" href="assets/css/ruby.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- swiper carousel  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Ruby - Blog</title>
+  </head>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <title>Ruby - Blog</title>
-</head>
+  <body class="bg-hero-pattern bg-no-repeat bg-fixed bg-no-repeat">
+    <!-- page navigation -->
+    <nav class="fixed w-full block top-0 py-3 ease-in duration-100 z-40">
+      <!-- navbar container  -->
+      <div
+        class="container relative mx-auto flex items-center justify-between px-3"
+      >
+        <!-- navbar logo  -->
+        <a href="#">
+          <img src="assets/img/brand.svg" alt="" class="w-10 py-5" />
+        </a>
+        <!-- // navbar logo  -->
 
-<body class="bg-hero-pattern bg-cover bg-no-repeat">
-  <nav class="fixed w-full block top-0 py-3 ease-in duration-100 z-40">
-    <div class="container relative mx-auto flex items-center justify-between px-3">
-      <a href="#">
-        <img src="assets/img/brand.svg" alt="" class="w-10 py-5" />
-      </a>
-      <button data-collapse-toggle="navbar-multi-level" type="button"
+        <!-- navbar toggler (for small viewports) -->
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
           class="navbar-toggler inline-flex items-center p-2 ml-3 text-sm ease-in duration-100 text-gray-900 rounded-lg focus:bg-pink-100 focus:shadow-lg border border-transparent focus:border-pink-300 focus:text-pink-500 focus:outline-none active:bg-pink-200 md:hidden"
-          aria-controls="navbar-multi-level" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <ol
-          class="navbar-list bg-slate-100 font-semibold absolute top-full left-0 w-full mt-3 py-3 ease-in duration-300 opacity-0 invisible md:relative md:visible md:opacity-100 md:w-auto md:flex md:bg-transparent md:p-0 md:m-0">
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-      </ol>
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- / navbar toggler (for small viewports) -->
+
+        <!-- navbar nav links  -->
+        <ol
+          class="navbar-list bg-slate-100 font-semibold absolute top-full left-0 w-full mt-3 py-3 ease-in duration-300 opacity-0 invisible md:relative md:visible md:opacity-100 md:w-auto md:flex md:bg-transparent md:p-0 md:m-0"
+        >
+          <li class="px-4 py-3"><a href="#">Pricings</a></li>
+          <li class="px-4 py-3"><a href="#">Pricings</a></li>
+          <li class="px-4 py-3"><a href="#">Pricings</a></li>
+        </ol>
+        <!-- // navbar nav links  -->
+      </div>
+      <!-- // navbar container  -->
+    </nav>
+    <!-- // page navigation -->
+
+    <!-- carousel row  -->
+    <!-- READ DOC: https://swiperjs.com/swiper-api -->
+    <div class="mt-30 md:mt-34 swiper">
+      <div class="swiper-wrapper">
+        <!-- carousel items  -->
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2"
+        >
+          <img
+            src="assets/img/blog-01.jpg"
+            class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+            alt=""
+          />
+          <div
+            class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+          ></div>
+          <div class="absolute bottom-0 text-white m-7">
+            <h2 class="text-2xl md:text-3xl mb-2">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <div class="flex opacity-90">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+          </div>
+        </a>
+        <!-- // carousel itemx -->
+      </div>
     </div>
-  </nav>
+    <!-- // carousel row  -->
 
-  <!-- carousel row  -->
-  <!-- READ DOC: https://swiperjs.com/swiper-api -->
-  <div class="mt-30 md:mt-34 flex swiper">
-    <div class="swiper-wrapper">
-      <!-- carousel items  -->
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
+    <!-- Featured blog post section  -->
+    <!-- container  -->
+    <div class="container mx-auto mb-20">
+      <!-- AD holder  -->
+      <div class="bg-slate-100 p-9 font-bold text-center border my-16">AD</div>
+      <!-- // AD holder  -->
+
+      <!-- section description  -->
+      <h3 class="font-bold mb-2 text-slate-900">
+        Featured Blog
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold"
+        >
+          Post</span
+        >
+      </h3>
+      <p class="md:max-w-96 text-slate-900 mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+        dignissimos.
+      </p>
+      <!-- // section description  -->
+
+      <!-- row -->
+      <div class="flex">
+        <!-- 'col-8' 'col md up 12'  -->
+        <div class="w-full lg:w-9/12 mr-3">
+          <!-- featured blog card  -->
+          <a
+            href="#"
+            class="block min-h-96 max-h-96 min-w-full md:min-h-128 md:max-h-128 shadow-lg rounded-xl overflow-hidden relative"
+          >
+            <img
+              src="assets/img/blog-02.jpg"
+              class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0"
+              alt=""
+            />
+            <div
+              class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"
+            ></div>
+            <div class="absolute bottom-0 text-white mx-7 my-5 md:mx-10 md:my-6">
+              <h2 class="text-2xl md:text-3xl mb-2">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="text-white mb-6 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <span class="font-bold">Read More...</span>
+              </p>
+              <div class="flex opacity-90">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon
+                    class="text-base inline-block mr-2"
+                    name="calendar-outline"
+                  ></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon
+                    class="text-base inline-block mr-2"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // featured blog card  -->
         </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide d-block h-128 w-full shadow-lg border-pink-900 overflow-hidden rounded-lg relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="bg-cover min-h-full min-w-full" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-pink-900"></div>
-        <div class="absolute bottom-0 text-white m-7 mb-8">
-          <h2 class="text-3xl mb-5">Top 5 Game You Need To Play in 2023</h2>
-          <div class="text-sm flex opacity-90">
-            <h6 class="text-xs flex items-center mr-5">
-              <span class="gg-calendar inline-block mr-2"></span> JAN 01, 2022
-            </h6>
-            <h6 class="text-xs flex items-center">
-              <span class="gg-comment inline-block mr-2"></span> 235
-            </h6>
-          </div>
-        </div>
-      </a>
+        <div class="w-full md:w-3/12 bg-slate-200 ml-3 text-center">AD</div>
+      </div>
+      <!-- // row  -->
     </div>
+    <!-- // Featured blog post section  -->
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <!-- More blog post section  -->
+    <div class="container mb-30">
+      <!-- section description  -->
+      <h3 class="font-bold mb-2 text-slate-900">
+        More Blog
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold"
+        >
+          Posts</span
+        >
+      </h3>
+      <p class="md:max-w-96 text-slate-900 mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+        dignissimos.
+      </p>
+      <!-- section description  -->
 
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- // carousel row  -->
 
-  <div class="m5-40">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptate
-    error corrupti assumenda, qui et. Alias commodi distinctio consectetur in
-    deleniti labore cumque, qui aperiam voluptatibus quisquam inventore
-    perferendis rerum aliquam sit itaque quaerat reiciendis similique hic,
-    illo velit consequuntur ipsa nihil! Placeat non obcaecati at quo! Numquam
-    assumenda deserunt veniam. Commodi facere cupiditate assumenda
-    exercitationem iure esse voluptates, provident delectus autem. Itaque
-    aperiam, provident nemo reprehenderit numquam possimus sint nostrum
-    voluptates beatae unde nihil cupiditate tempora ab doloremque expedita hic
-    labore illum tempore odit consectetur. Alias, ullam a id, temporibus
-    officia aliquam obcaecati similique, quisquam nam nesciunt perspiciatis.
-    Vel saepe molestiae cumque atque! Cupiditate dolorem accusamus accusantium
-    necessitatibus consectetur vel deserunt libero nostrum ducimus eligendi
-    facilis, cumque neque perferendis assumenda vitae optio pariatur a
-    quisquam eum! Repudiandae optio dignissimos magni facilis dolore iusto
-    vero possimus corporis placeat qui, dolorem corrupti ipsa blanditiis,
-    reprehenderit cupiditate odit. Quae aliquid explicabo hic maiores eligendi
-    dicta voluptates quia cum perspiciatis aliquam, repellendus officiis
-    voluptatum adipisci itaque quidem reiciendis amet suscipit tempore saepe
-    nesciunt porro repellat tenetur delectus eos. Quas hic, repudiandae fugiat
-    aut corrupti nulla incidunt vero doloribus nisi, aperiam quam architecto
-    officia rem repellendus ipsam, enim sint a beatae minus sit voluptate
-    saepe nostrum voluptatem reprehenderit. Recusandae est adipisci fugiat
-    alias maxime tempora rerum quasi delectus facere. Corrupti molestiae sed,
-    eligendi animi asperiores sunt fugit quae molestias laborum quaerat eaque
-    odio esse cumque nisi debitis quos repudiandae accusamus alias dolores,
-    earum et! Aperiam, ducimus! Consequatur aut placeat enim voluptate
-    similique earum repellat esse ratione, nesciunt, asperiores sapiente
-    fugiat dicta illum laboriosam tempore facere perspiciatis facilis
-    molestias corporis eius excepturi. Minus blanditiis corrupti provident
-    quidem placeat ab voluptatibus commodi, corporis atque facilis error
-    tenetur cupiditate necessitatibus distinctio qui praesentium! Obcaecati
-    nihil, commodi perferendis voluptas consequatur voluptates aliquid quam
-    facere molestias quae? Sint quia neque, commodi molestiae voluptate magni
-    quam ea ipsam, fugiat laboriosam nemo sed optio repellat ex, perspiciatis
-    impedit. Ex incidunt fugiat ratione omnis magni cupiditate minus odio
-    dolores explicabo quos nobis assumenda dolorum eveniet, ullam sint
-    dolorem. Aut expedita magnam perferendis repellat asperiores quam suscipit
-    nam modi similique ipsam at explicabo possimus odio totam, vitae
-    temporibus dolorem fuga et rem dolor veniam cumque recusandae minus.
-    Molestias, perspiciatis. Totam deserunt voluptas laborum illo veniam
-    dignissimos! Modi aperiam, atque unde accusantium debitis asperiores sint,
-    deleniti, voluptates alias labore ipsum deserunt. Id, quasi officiis error
-    soluta aspernatur, non alias libero aut tempore mollitia porro!
-  </div>
-</body>
-<script src="assets/js/ruby.js"></script>
+      <!-- row -->
+      <div class="flex mb-20  flex-wrap gap-2">
+        <!-- cards (from medium screen 3 column) -->
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="w-full flex-wrap lg:w-4/12 overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="assets/img/blog-02.jpg"
+            alt=""
+            class="w-full h-70 object-cover"
+          />
+          <div class="px-4 md:px-6 py-5">
+            <div class="flex opacity-90 mb-4 justify-between">
+              <h6 class="text-sm flex items-center mr-5">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="calendar-outline"
+                ></ion-icon>
+                JAN 01, 2022
+              </h6>
+              <h6 class="text-sm flex items-center">
+                <ion-icon
+                  class="text-base inline-block mr-2"
+                  name="chatbubble-outline"
+                ></ion-icon>
+                235
+              </h6>
+            </div>
+            <h2 class="text-2xl md:text-3xl mb-3">
+              Top 5 Games You Need To Play in 2023
+            </h2>
+            <p class="mb-3 text-lg font-normal">
+              Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem laboriosam hic porro excepturi quidem laborum
+              corporis dolorem corrupti sit delectus.
+              <a href="#"
+                class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+                >Read More...</a href="#"
+              >
+            </p>
+            
+          </div>
+        </div>
+        
+        <!-- // card (MD 2 column, LG 3 column) -->
+      </div>
+      <div class="text-center">
+        <button class="rounded-full font-semibold bg-gradient-to-r from-pink-500 to-orange-500 text-white px-7 py-3 min-w-70">Load More</button>
+      </div>
+    </div>
+    <!-- // More blog post section  -->
 
-<script>
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 6,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1.5,
-        spaceBetween: 20
+    <footer class="text-center py-5 md:py-10 opacity-80 text-slate-500 font-semibold">@ 2022 All rights reserved.</footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script src="assets/js/ruby.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
       },
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      960: {
-        slidesPerView: 5,
-        spaceBetween: 20
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 20
-      }
-    }
-  });
-</script>
-
+      navigation: false,
+      spaceBetween: 30,
+      centeredSlides: true,
+      slidesPerView: "auto",
+    });
+  </script>
 </html>

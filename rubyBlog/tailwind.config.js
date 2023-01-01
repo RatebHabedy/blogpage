@@ -1,16 +1,114 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./build/**/*.{html,js}"],
   darkMode: "class",
-  plugins: [
-    require("@tailwindcss/typography"),
-    // ...
-  ],
   theme: {
     minWidth: {
       96: "24rem",
+      88: "20rem",
+      80: "15rem",
+      70: "12rem",
+    },
+    maxWidth: {
+      96: "24rem",
+      88: "20rem",
+      80: "15rem",
+      70: "12rem",
+    },
+
+    minHeight: {
+      96: "24rem",
+      88: "20rem",
+      80: "15rem",
+      70: "12rem",
+      128: "36rem",
+    },
+    maxHeight: {
+      12: "14rem",
+      96: "24rem",
+      88: "20rem",
+      80: "15rem",
+      70: "12rem",
+      128: "36rem",
+    },
+
+    container: {
+      center: true,
+      padding: "2rem",
+    },
+
+    // typography
+    fontSize: {
+      xs: [
+        ".7rem",
+        {
+          lineHeight: "2rem",
+          // letterSpacing: '-0.01em',
+          fontWeight: "500",
+        },
+      ],
+      sm: [
+        ".8rem",
+        {
+          lineHeight: "2rem",
+          fontWeight: "500",
+        },
+      ],
+      base: [
+        "1rem",
+        {
+          lineHeight: "1.625",
+        },
+      ],
+      xl: [
+        "1.25rem",
+        {
+          lineHeight: "2rem",
+        },
+      ],
+      "2xl": [
+        "1.563rem",
+        {
+          lineHeight: "1.4",
+        },
+      ],
+      "3xl": [
+        "1.963rem",
+        {
+          lineHeight: "1.3",
+        },
+      ],
+      "4xl": [
+        "2.441rem",
+        {
+          lineHeight: "1.3",
+          // letterSpacing: '-0.01em',
+          // fontWeight: '500',
+        },
+      ],
+      "5xl": [
+        "3.05rem",
+        {
+          lineHeight: "1.5",
+          // letterSpacing: '-0.01em',
+          // fontWeight: '500',
+        },
+      ],
+    },
+    fontFamily: {
+      sans: [
+        'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+      ],
+      serif: [
+        'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+        "serif",
+      ],
     },
     extend: {
+      // FONT BASE
       backgroundImage: {
         "hero-pattern": "url('/build/assets/img/bg-blur-primary.jpg')",
       },
@@ -27,6 +125,7 @@ module.exports = {
         DEFAULT: "4px",
         md: "0.375rem",
         lg: "1.3rem",
+        xl: "1.6rem",
         full: "9999px",
         large: "2rem",
       },
@@ -79,12 +178,6 @@ module.exports = {
         md: "28rem",
         lg: "32rem",
         xl: "36rem",
-        "2xl": "42rem",
-        "3xl": "48rem",
-        "4xl": "56rem",
-        "5xl": "64rem",
-        "6xl": "72rem",
-        "7xl": "80rem",
       },
       spacing: {
         px: "1px",
@@ -173,16 +266,16 @@ module.exports = {
 
       slate: {
         DEFAULT: colors.slate,
-        50: "#f8fafc",
-        100: "#dee2e6",
-        200: "#cbd3da",
-        300: "#a8b8d8",
-        400: "#8392ab",
-        500: "#67748e",
-        600: "#627594",
-        700: "#344767",
-        800: "#3a416f",
-        900: "#0f172a",
+        50: "#F8F7F8",
+        100: "#F5F3F4",
+        200: "#F1EEF1",
+        300: "#E9E3E7",
+        400: "#E0D9DF",
+        500: "#D2C7CF",
+        600: "#BBABB7",
+        700: "#977F91",
+        800: "#72516A",
+        900: "#4F2645",
       },
 
       gray: {
@@ -453,16 +546,16 @@ module.exports = {
 
       pink: {
         DEFAULT: colors.pink,
-        50: "#fdf2f8",
-        100: "#fce7f3",
-        200: "#fbcfe8",
-        300: "#f9a8d4",
-        400: "#f472b6",
-        500: "#ff0080",
-        600: "#db2777",
-        700: "#be185d",
-        800: "#9d174d",
-        900: "#831843",
+        50: "#FEF8FA",
+        100: "FEF3F6",
+        200: "#FEE5EB",
+        300: "#FDDAE3",
+        400: "#FDC8D5",
+        500: "#F94C76",
+        600: "#E3315C",
+        700: "#C41C45",
+        800: "#A51639",
+        900: "#A10D31",
       },
 
       rose: {
@@ -480,4 +573,88 @@ module.exports = {
       },
     }),
   },
+  plugins: [
+    plugin(function ({ addComponents, addUtilities }) {
+      const typography = {
+        a: {
+          "letter-spacing": "-0.025rem",
+        },
+
+        hr: {
+          margin: "1rem 0",
+          border: "0",
+          opacity: ".25",
+        },
+
+        img: {
+          maxWidth: "none",
+        },
+
+        label: {
+          display: "inline-block",
+        },
+
+        p: {
+          "line-height": "1.8",
+          "font-weight": "400",
+          "margin-bottom": "1rem",
+          "letter-spacing": ".02rem",
+        },
+
+        small: {
+          "font-size": ".875em",
+        },
+
+        svg: {
+          display: "inline",
+        },
+
+        table: {
+          "border-collapse": "inherit",
+        },
+
+        "h1, h2, h3, h4, h5, h6": {
+          "margin-bottom": ".5rem",
+          color: "#344767",
+        },
+
+        "h1, h2, h3, h4, h5, h6": {
+          "letter-spacing": "-0.04rem",
+        },
+
+        "h1, h2, h3": {
+          "font-weight": "600",
+        },
+        "h4, h5, h6": {
+          "font-weight": "500",
+        },
+
+        h1: {
+          "font-size": "3rem",
+          "line-height": "1.25",
+        },
+        h2: {
+          "font-size": "2.25rem",
+          "line-height": "1.3",
+        },
+        h3: {
+          "font-size": "1.875rem",
+          "line-height": "1.375",
+        },
+        h4: {
+          "font-size": "1.5rem",
+          "line-height": "1.375",
+        },
+        h5: {
+          "font-size": "1.25rem",
+          "line-height": "1.375",
+        },
+        h6: {
+          "font-size": "1rem",
+          "line-height": "1.625",
+        },
+      };
+      addComponents(typography);
+    }),
+  ],
 };
