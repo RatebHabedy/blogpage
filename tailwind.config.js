@@ -5,6 +5,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./build/**/*.{html,js}"],
   darkMode: "class",
+  variants: {
+    extend: {
+      // ...
+     display: ['hover', 'focus', 'group-hover'],
+    }
+  },
   theme: {
     minWidth: {
       96: "24rem",
@@ -60,6 +66,12 @@ module.exports = {
           lineHeight: "1.625",
         },
       ],
+      md: [
+        "1.2rem",
+        {
+          lineHeight: "1.625",
+        },
+      ],
       xl: [
         "1.25rem",
         {
@@ -106,9 +118,9 @@ module.exports = {
     },
     extend: {
       // FONT BASE
-      backgroundImage: {
-        "hero-pattern": "url('/build/assets/img/bg-blur-primary.jpg')",
-      },
+      // backgroundImage: {
+      //   "hero-pattern": "url('/build/assets/img/bg-blur-primary.jpg')",
+      // },
       margin: {
         "10px": "10px",
       },

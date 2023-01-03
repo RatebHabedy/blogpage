@@ -1,15 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@layer components {
-  .card {
-    @apply w-full overflow-hidden rounded-lg shadow-lg w-full;
+/* base  */
+@import "tailwindcss/base";
+@import "base/custom-base.css";  
+
+/* components  */
+@import "tailwindcss/components";
+@import "components/custom-components.css";  
+
+/* Utilities  */
+@import "tailwindcss/utilities";
+@import "utilities/custom-utilities.css";  
+
+
+
+
+@layer base {
+  p {
+    @apply text-slate-900;  
+  }
+
+  .section-title {
+    @apply font-bold mb-2 text-slate-900;
+  }
+
+  .section-subtitle { 
   }
 }
 
+
 @layer utilities {
+  /* main background image  */
+  .bg-hero-pattern {
+    @apply bg-[url('../img/bg-blur-primary.jpg')]  bg-no-repeat bg-fixed bg-no-repeat bg-cover;
+  }
+
+  /* masonry columns  */
   .masonry-3-col {
     column-count: 3;
   }

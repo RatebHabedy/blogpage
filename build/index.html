@@ -1,209 +1,248 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/gg-icons.css" />
-  <link rel="stylesheet" href="assets/css/ruby.css" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <!-- swiper carousel  -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <title>Ruby - Blog</title>
-</head>
-
-<body class="bg-hero-pattern bg-no-repeat bg-fixed bg-no-repeat">
-  <!-- page navigation -->
-  <nav class="fixed w-full block top-0 py-3 ease-in duration-100 z-40">
-    <!-- navbar container  -->
-    <div class="container relative mx-auto flex items-center justify-between px-3">
-      <!-- navbar logo  -->
-      <a href="#">
-        <img src="assets/img/brand.svg" alt="" class="w-10 py-5" />
-      </a>
-      <!-- // navbar logo  -->
-
-      <!-- navbar toggler (for small viewports) -->
-      <button data-collapse-toggle="navbar-multi-level" type="button"
-          class="navbar-toggler inline-flex items-center p-2 ml-3 text-sm ease-in duration-100 text-gray-900 rounded-lg focus:bg-pink-100 focus:shadow-lg border border-transparent focus:border-pink-300 focus:text-pink-500 focus:outline-none active:bg-pink-200 md:hidden"
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/ruby.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- swiper carousel  -->
+    <title>Ruby - Blog</title>
+  </head>
+  <body class="bg-hero-pattern">
+    <!-- page navigation -->
+    <nav class="navbar">
+      <!-- navbar container  -->
+      <div class="navbar-container">
+        <!-- navbar logo  -->
+        <a href="#">
+        <img src="assets/img/brand.svg" alt="" class="w-10 py-5">
+        </a>
+        <!-- // navbar logo  -->
+        <!-- navbar toggler (for small viewports) -->
+        <button type="button"
+          class="navbar-toggler"
           aria-controls="navbar-multi-level" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <!-- / navbar toggler (for small viewports) -->
-
-      <!-- navbar nav links  -->
-      <ol
-          class="navbar-list bg-slate-100 font-semibold absolute top-full left-0 w-full mt-3 py-3 ease-in duration-300 opacity-0 invisible md:relative md:visible md:opacity-100 md:w-auto md:flex md:bg-transparent md:p-0 md:m-0">
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-        <li class="px-4 py-3"><a href="#">Pricings</a></li>
-      </ol>
-      <!-- // navbar nav links  -->
-    </div>
-    <!-- // navbar container  -->
-  </nav>
-  <!-- // page navigation -->
-
-  <!-- carousel row  -->
-  <!-- READ DOC: https://swiperjs.com/swiper-api -->
-  <div class="mt-30 md:mt-34 swiper">
-    <div class="swiper-wrapper">
-      <!-- carousel items  -->
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
+          </svg>
+        </button>
+        <!-- / navbar toggler (for small viewports) -->
+        <!-- navbar nav links  -->
+        <ol
+          class="navbar-list invisible opacity-0 md:visible md:opacity-100 ">
+          <li class="navbar-link navbar-link-active"><a href="#">Pricings</a></li>
+          <li class="navbar-link"><a href="#">Pricings</a></li>
+          <li class="navbar-link"><a href="#">Pricings</a></li>
+        </ol>
+        <!-- // navbar nav links  -->
+      </div>
+      <!-- // navbar container  -->
+    </nav>
+    <!-- // page navigation -->
+    <!-- page content  -->
+    <div class="mt-32">
+      <!-- carousel row  -->
+      <!-- READ DOC: https://swiperjs.com/swiper-api -->
+      <div class="swiper mb-20">
+        <div class="swiper-wrapper">
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
+          <!-- carousel items  -->
+          <a href="single-post.html" class="swiper-slide card card-overlay min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full">
+            <img src="assets/img/blog-01.jpg" class="card-overlay-img" alt="">
+            <div class="card-overlay-bg"></div>
+            <div class="card-overlay-content text-white">
+              <h2 class="card-overlay-title">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <div class="card-overlay-iconholder">
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="card-overlay-text">
+                  <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+            </div>
+          </a>
+          <!-- // carousel itemx -->
         </div>
-      </a>
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="swiper-slide block min-h-96 max-h-128 max-w-88 md:max-w-96 md:min-h-128 w-full shadow-lg border-pink-900 rounded-xl overflow-hidden relative mx-2">
-        <img src="assets/img/blog-01.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-        <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-        <div class="absolute bottom-0 text-white m-7">
-          <h2 class="text-2xl md:text-3xl mb-2">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <div class="flex opacity-90">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-        </div>
-      </a>
-      <!-- // carousel itemx -->
-    </div>
-  </div>
-  <!-- // carousel row  -->
-
-  <!-- Featured blog post section  -->
-  <!-- container  -->
-  <div class="container mx-auto mb-20">
-    <!-- AD holder  -->
-    <div class="bg-slate-100 p-9 font-bold text-center border my-16">AD</div>
-    <!-- // AD holder  -->
-
-    <!-- section description  -->
-    <h3 class="font-bold mb-2 text-slate-900">
-      Featured Blog
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold">
-        Post</span>
-    </h3>
-    <p class="md:max-w-96 text-slate-900 mb-5">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-      dignissimos.
-    </p>
-    <!-- // section description  -->
-
-    <!-- row -->
-    <div class="flex">
-      <!-- 'col-8' 'col md up 12'  -->
-      <div class="w-full lg:w-9/12 mr-3">
+      </div>
+      <!-- // carousel row  -->
+      <!-- Featured blog post section  -->
+      <!-- container  -->
+      <div class="container mb-11">
+        <!-- AD holder  -->
+        <div class="bg-blue-200 p-9 font-bold text-center border mb-11">AD</div>
+        <!-- // AD holder  -->
+        <!-- section description  -->
+        <h3 class="section-title">
+          Featured Blog
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold">
+          Post</span>
+        </h3>
+        <p class="mb-5 md:max-w-9">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+          dignissimos.
+        </p>
+        <!-- // section description  -->
         <!-- featured blog card  -->
-        <a href="#" class="block min-h-96 max-h-96 min-w-full md:min-h-128 md:max-h-128 shadow-lg rounded-xl overflow-hidden relative">
-          <img src="assets/img/blog-02.jpg" class="w-full h-full object-cover hover:scale-110 absolute left-0 top-0" alt="" />
-          <div class="absolute block border w-full h-full top-0 left-0 bg-gradient-to-t from-slate-900"></div>
-          <div class="absolute bottom-0 text-white mx-7 my-5 md:mx-10 md:my-6">
-            <h2 class="text-2xl md:text-3xl mb-2">
+        <a href="single-post.html" class="card card-overlay min-h-96 max-h-96 md:min-h-128 md:max-h-128 mb-11">
+          <img src="assets/img/blog-02.jpg" class="card-overlay-img" alt="">
+          <div class="card-overlay-bg"></div>
+          <div class="card-overlay-content text-white">
+            <h2 class="card-overlay-title">
               Top 5 Games You Need To Play in 2023
             </h2>
             <p class="text-white mb-6 text-lg font-normal">
@@ -212,244 +251,209 @@
               corporis dolorem corrupti sit delectus.
               <span class="font-bold">Read More...</span>
             </p>
-            <div class="flex opacity-90">
-              <h6 class="text-sm flex items-center mr-5">
-                <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+            <div class="card-overlay-iconholder">
+              <h6 class="card-overlay-text">
+                <ion-icon class="card-overlay-icon" name="calendar-outline"></ion-icon>
                 JAN 01, 2022
               </h6>
-              <h6 class="text-sm flex items-center">
-                <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+              <h6 class="card-overlay-text">
+                <ion-icon class="card-overlay-icon" name="chatbubble-outline"></ion-icon>
                 235
               </h6>
             </div>
           </div>
         </a>
         <!-- // featured blog card  -->
+        <!-- ad holder  -->
+        <div class="bg-blue-200 p-9 font-bold text-center border">AD</div>
+        <!-- // ad holder  --> 
       </div>
-      <div class="w-full md:w-3/12 bg-slate-200 ml-3 text-center">AD</div>
+      <!-- // Featured blog post section  -->
+      <!-- More blog post section  -->
+      <div class="container mb-11">
+        <!-- section description  -->
+        <h3 class="section-title">
+          More Blog
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold">
+          Posts</span>
+        </h3>
+        <p class="md:max-w-96 text-slate-900 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+          dignissimos.
+        </p>
+        <!-- section description  -->
+        <!-- row -->
+        <div class="grid mb-20 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- cards (from medium screen 3 column) -->
+          <div class="card bg-white shadow-blue-500/3">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-blue-500/3">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-blue-500/3">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-blue-500/3">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <div class="card bg-white">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-blue-500/3">
+            <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover">
+            <div class="card-body">
+              <div class="flex opacity-90 mb-2 md:mb-4 justify-between">
+                <h6 class="text-sm flex items-center mr-5">
+                  <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
+                  JAN 01, 2022
+                </h6>
+                <h6 class="text-sm flex items-center">
+                  <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
+                  235
+                </h6>
+              </div>
+              <h2 class="text-xl md:text-2xl mb-1 md:mb-3">
+                Top 5 Games You Need To Play in 2023
+              </h2>
+              <p class="mb-2 md:md-3 text-lg font-normal">
+                Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem laboriosam hic porro excepturi quidem laborum
+                corporis dolorem corrupti sit delectus.
+                <a href="single-post.html" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
+              </p>
+            </div>
+          </div>
+          <!-- // card (MD 2 column, LG 3 column) -->
+        </div>
+        <div class="text-center">
+          <button class="rounded-full font-semibold bg-gradient-to-r from-pink-500 to-orange-500 text-white px-7 py-3 min-w-70 shadow-2xl shadow-pink-500/40 hover:shadow-pink-500/60 active:shadow-pink-500/90 ease-in duration-200 ">Load More</button>
+        </div>
+      </div>
+      <!-- // More blog post section  -->
     </div>
-    <!-- // row  -->
-  </div>
-  <!-- // Featured blog post section  -->
-
-  <!-- More blog post section  -->
-  <div class="container mb-30">
-    <!-- section description  -->
-    <h3 class="font-bold mb-2 text-slate-900">
-      More Blog
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 font-bold">
-        Posts</span>
-    </h3>
-    <p class="md:max-w-96 text-slate-900 mb-5">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-      dignissimos.
-    </p>
-    <!-- section description  -->
-
-
-    <!-- row -->
-    <div class="grid mb-20 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <!-- cards (from medium screen 3 column) -->
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/blog-02.jpg" alt="" class="w-full h-70 object-cover" />
-        <div class="px-4 md:px-6 py-5">
-          <div class="flex opacity-90 mb-4 justify-between">
-            <h6 class="text-sm flex items-center mr-5">
-              <ion-icon class="text-base inline-block mr-2" name="calendar-outline"></ion-icon>
-              JAN 01, 2022
-            </h6>
-            <h6 class="text-sm flex items-center">
-              <ion-icon class="text-base inline-block mr-2" name="chatbubble-outline"></ion-icon>
-              235
-            </h6>
-          </div>
-          <h2 class="text-2xl md:text-3xl mb-3">
-            Top 5 Games You Need To Play in 2023
-          </h2>
-          <p class="mb-3 text-lg font-normal">
-            Lorem 1123 ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem laboriosam hic porro excepturi quidem laborum
-            corporis dolorem corrupti sit delectus.
-            <a href="#" class="block pt-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Read More...</a href="#">
-          </p>
-
-        </div>
-      </div>
-      <!-- // card (MD 2 column, LG 3 column) -->
-    </div>
-    <div class="text-center">
-      <button class="rounded-full font-semibold bg-gradient-to-r from-pink-500 to-orange-500 text-white px-7 py-3 min-w-70">Load More</button>
-    </div>
-  </div>
-  <!-- // More blog post section  -->
-
-  <footer class="text-center py-5 md:py-10 opacity-80 text-slate-500 font-semibold">@ 2022 All rights reserved.</footer>
-</body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script src="assets/js/ruby.js"></script>
-
-<script>
-  var swiper = new Swiper(".swiper", {
-    loop: true,
-    loopFillGroupWithBlank: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    navigation: false,
-    spaceBetween: 30,
-    centeredSlides: true,
-    slidesPerView: "auto",
-  });
-</script>
-
+    <footer class="text-center py-5 md:py-10 opacity-80 text-slate-500 font-semibold">@ 2022 All rights reserved.</footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="assets/js/ruby.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      navigation: false,
+      spaceBetween: 30,
+      centeredSlides: true,
+      slidesPerView: "auto",
+    });
+  </script>
 </html>
