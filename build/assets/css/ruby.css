@@ -1450,10 +1450,6 @@ h6{
     margin-bottom: 0.75rem;
   }
 
-  .md\:mb-11{
-    margin-bottom: 2.75rem;
-  }
-
   .md\:mb-8{
     margin-bottom: 2rem;
   }
@@ -1495,7 +1491,15 @@ h6{
 }
 
 @media (min-width: 992px){
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
